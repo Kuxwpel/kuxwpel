@@ -17,15 +17,22 @@
     clear: both;
 }
 */
+#pasek_divider{
+    background-image: url("../img/divider.jpg");
+    width: 6px;
+}
 #pasek_start{
-    background-color: #C0C0C0;
-    width: 1230px;
+    background-image: url("../img/pasek_start.jpg");
+    background-repeat: repeat;
+    width: 1172px;
     height: 32px;
     float: left;
 }
 #zegar_sys{
-    background-color: #C0C0C0;
-    width: 50px;
+    background-image: url("../img/zegar_bcg.jpg");
+    width: 105px;
     height: 32px;
+    text-align: center;
+    padding-top: 7px;
     float: left;
 }
