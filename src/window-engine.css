@@ -89,7 +89,10 @@
 	width: auto;
 	height: auto;
 }
-
+.program{
+	width:350px;
+	height: 32px;
+}
 *,
 *::before,
 *::after {
