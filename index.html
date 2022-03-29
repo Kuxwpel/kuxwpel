@@ -1,124 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>potężny projekt test dwa trzy cztery</title>
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="src/window-engine.css">
-<link rel="stylesheet" href="css/menu.css">
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="window-engine.css">
 </head>
+<body>
+    <div class="container">                             <!--container start-->
+                                                        <!--monitor start-->
+        <div class="monitor"> 
 
-<body onload="odliczanie();">
-<div id="wrapper">
- <div id="container">
-    
-    <div id="monitor">
+<div class="windowGroup">
 
-           <div id="notepad"><img src="img/notepad.png" width="42px" height="42px" a href="#" id="button3"/></div>
-     
-     <div class="windowGroup">
+	<div id="window1" class="window gif" style="display: fade;">
+		<div class="purple">
+			<p class="windowTitle">Berkman</p>
+		</div>
+		<div class="mainWindow">
+			<img src="gif/GUTS_ARMORED.gif">
+		</div>
+	</div>
 
-          <div id="window1" class="window gif" style="display: fade;">
-               <div class="purple">
-                    <p class="windowTitle">Skull knight</p>
-               </div>
-               <div class="mainWindow">
-                    <img src="gif/SCULL.gif"/>
-               </div>
-          </div>
+    <div id="window2" class="window gif" style="display: fade;">
+		<div class="purple">
+			<p class="windowTitle">Skullknight</p>
+		</div>
+		<div class="mainWindow">
+			<img src="gif/SCULL.gif"/>
+		</div>
+	</div>
 
-          <div id="window2" class="window gif" style="display: fade;">
-               <div class="purple">
-                    <p class="windowTitle">Berkman</p>
-               </div>
-               <div class="mainWindow">
-                    <img src="gif/GUTS_ARMORED.gif"/>
-               </div>
-          </div>
-                    <!-- Notepad -->
-          <div id="window3" class="window large" style="display: fade;">
-               <div class="purple">
-                    <p class="windowTitle"> <img src="img/notepad.png" width="20px"; height="20px" image-rendering: pixelated; >Notepad</p>
-               </div>
-               <div class="mainWindow">
-                    <div class="main">
-                         <div class="main-container">
-                         
-                              <div class="header">
-                               <input type="text" class="txtHeader" id="txtHeader" placeholder="Wpisz nazwę pliku."/>
-                              
-                              </div>
-                         
-                               <div class="content">
-                               <textarea class="txtContent" id="txtContent" style="width: 957px; height: 392px;"></textarea>
-                               </div>
-                         
-                              <div class="options">
-                              <center>
-                              <button onclick="downloadFile()" class="btn btn-download">Zapisz.</button>
-                              <button onclick="changeStyle('b')" class="btn1"><b>B</b></button>
-                              <button onclick="changeStyle('i')" class="btn1"><i>i</i></button>
-                              <button onclick="changeStyle('u')" class="btn1">u</button>
-                              <button onclick="changeStyle('n')" class="btn1">n</button>
-                              </center>
-                              </div>
-                         
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </div>
-    </div>
-     
-    <!-- Menu Start -->
-    <div class="dropdown">
-      <button onclick="start()" class="dropbtn"></button>
-       <div id="menu_start" class="dropdown-content">
-         <a href="#" id="button1"><img src="img/chibiskull.png" height="32px" width="40px" />eVerYthIng is CaUsEd bY tEh God HAnD.</a>
-         <a href="#" id="button2"><img src="img/chibiberk.png" height="32px" width="40px" />Berkman bad.</a>
-         
-       </div>
-    </div>
-    <!--Menu Start -->     
-    </div>
-     <div id="pasek_start">
-          <div id="pasek_divider" img src="img/divider.jpg"></div>
-          <div id="program">
-
-               <div class="windowGroup">
-
-                    <div id="window1" class="window gif" style="display: fade;">
-                         <div class="orange">
-                              <p class="windowTitle">Skull knight</p>
-                         </div>
-                         <div class="mainWindow">
-                              
-                         </div>
-                    </div>
-
-
-               </div>
-
-          </div>
-    </div>     
-    <div id="zegar_sys">
-         12:00:00 
-    </div>
-    
-
+    <div id="window3" class="window large" style="display: fade;">
+		<div class="purple">
+			<p class="windowTitle">sadberkman</p>
+		</div>
+		<div class="mainWindow">
+			<p>Guts, renowned as the "Black Swordsman", 
+                is a former mercenary and branded wanderer 
+                who travels the world in a constant internal 
+                struggle between pursuing his own ends and 
+                upholding his attachments to those dear to him. </p>
+                <br/>
+            <p>At one time driven solely by his will to survive,
+                Guts finds purpose in life upon joining the Band of the Falcon, 
+                greatly helping in the faction's storied successes during the Hundred-Year War as captain of the band's raiders. 
+                He eventually becomes dissatisfied with clinging to Griffith's dream and departs from the band in pursuit of his own.
+                Following the horrors of the Eclipse prompted by Griffith, 
+                Guts embarks on a two-year war against the God Hand and apostles, 
+                becoming increasingly embittered on his one-track quest for retribution. 
+                He in time realizes protecting his regressed lover is more important to him,
+                as well as something he cannot do alone, and thus puts aside his quest for revenge while fostering camaraderie with new companions. </p>
+		</div>
+	</div>
 
 </div>
-</body>
 
+
+
+        </div>
+                                                        <!--monitor end -->
+                                                        <!-- start start-->
+        <div class="start">
+
+            <div class="dropdown">
+                <button onclick="startON()" class="dropbtn"></button>
+                <div id="menu-start" class="dropdown-content">
+                  <a href="#" id="button1">Link 1</a>
+                  <a href="#" id="button2">Link 2</a>
+                  <a href="#" id="button3">Link 3</a>
+                  <a href="#" id="button4">Link 4</a>
+                </div>
+              </div> 
+
+
+        </div>
+                                                        <!--start end -->
+
+        <div class="pasek"> </div>
+
+        <div class="zegar"> </div>
+        
+    </div>                                              <!--container end-->
+</body>
 </html>
 
-<script src="src/window-engine.js"></script>
-<script src="js/backgroundimage.js"></script>
-<script src="js/start.js"></script>
-<script src="js/zegar_sys.js"></script>
-<script src="js/dragico.js"></script>
-<script src="js/dblclk.js"></script>
-<script src="js/notepad.js"></script>
+<script src="js/menu.js"></script> 
+<script src="js/window-engine.js"></script>

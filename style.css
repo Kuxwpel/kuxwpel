@@ -1,0 +1,171 @@
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Microsoft Sans Serif", sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-rows: 56.25rem 1.875rem;
+    grid-template-columns: 3.875rem auto 4.5rem;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100vw;
+    height: 100vh;
+    }
+    
+.monitor { 
+    grid-row: 1;
+    grid-column: 1 / span 3; 
+    background-color: #008080; 
+}
+.start { 
+    grid-row: 2;
+    grid-column: 1;
+}
+.start:focus, .start:visited{
+    background-image: url("img/start_on.jpg");
+}
+.pasek { 
+    grid-row: 2;
+    grid-column: 2; 
+    background-image: url("img/pasek_start.jpg");
+}
+.zegar { 
+    grid-row: 2;
+    grid-column: 3; 
+    background-image: url("img/zegar_bcg.jpg")
+}
+.dropbtn {
+    background-image: url("img/start.jpg");
+    width: 3.875rem;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:active, .dropbtn:focus {
+    background-image: url("img/start_on.jpg");
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #CADDEC;
+    color: black;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    bottom: 100%;
+}
+
+.dropdown-content a {
+    background-color: #CADDEC;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+      background-color: #000080;
+      color: white;
+}
+.show {
+    display:block;
+}
+
+/* 
+    320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV
+*/
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+    .container {
+        display: grid;
+        grid-template-rows: 56.25rem 1.875rem;  /*  1.875rem = 30px  */
+        grid-template-columns: 3.875rem auto 4.5rem;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100vw;
+        height: 100vh;
+        }
+} 
+
+@media (min-width:320px) and (orientation: landscape) { /* smartphones, portrait iPhone, portrait 480x320 phones */ 
+
+    .container {
+        display: grid;
+        grid-template-rows: 18.125rem 1.875rem;  
+        grid-template-columns: 3.875rem auto 4.5rem;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100vw;
+        height: 100vh;
+        }
+} 
+
+@media (min-width:481px) { /* smartphones, portrait iPhone, portrait 481x768 phones */
+    .container {
+        display: grid;
+        grid-template-rows: 56.25rem 1.875rem;
+        grid-template-columns: 3.875rem auto 4.5rem;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100vw;
+        height: 100vh;
+        }
+}
+@media (min-width:481px) and (orientation: landscape) { /* smartphones, portrait iPhone, portrait 481x768 phones */
+    .container {
+        display: grid;
+        grid-template-rows: 28rem 1.875rem;
+        grid-template-columns: 3.875rem auto 4.5rem;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100vw;
+        height: 100vh;
+        }
+}
+@media (min-width:769px) { /* smartphones, portrait iPhone, portrait 769x1024 phones */
+    .container {
+        display: grid;
+        grid-template-rows: auto 1.875rem;
+        grid-template-columns: 3.875rem auto 4.5rem;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100vw;
+        height: 100vh;
+        }
+}
+@media (min-width:769px) and (orientation: landscape) { /* smartphones, portrait iPhone, portrait 769x1024 phones */
+    .container {
+        display: grid;
+        grid-template-rows: 46.188rem 1.875rem;
+        grid-template-columns: 3.875rem auto 4.5rem;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100vw;
+        height: 100vh;
+        }
+}
+
+@media (min-width:1025px) { /* smartphones, portrait iPhone, portrait 769x1024 phones */
+    .container {
+        display: grid;
+        grid-template-rows: 56.55rem 1.875rem;
+        grid-template-columns: 3.875rem auto 4.5rem;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100vw;
+        height: 100vh;
+        }
+}
