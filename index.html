@@ -1,3 +1,6 @@
+                                                    <!--TO DO-->
+                                        <!--*ico+wsparcie double click-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +11,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="window-engine.css">
 </head>
-<body>
-    <div class="container">                             <!--container start-->
-                                                        <!--monitor start-->
+<body onload="updateHTML()">
+    <div class="container">                             <!--container starts-->
+                                                        <!--monitor starts-->
         <div class="monitor"> 
 
+                                                        <!--ico starts-->
+            <img src="ico/aboutme.png" width="60" height="60" id="button4"/> <br/>
+            <img src="ico/calendar.png" width="60" height="60" id="button5"/> <br/>
+            <img src="ico/mycomputer.png" width="60" height="60" id="button6"/><br/>
+            <img src="ico/notepad.png" width="60" height="60" id="button7"/><br/>
+            <img src="ico/trashbin.png" width="60" height="60" id="button8"/><br/>
+            
+                                                        <!--ico ends-->
+                                                        <!--popup windows-->
 <div class="windowGroup">
 
 	<div id="window1" class="window gif" style="display: fade;">
@@ -56,13 +68,61 @@
 		</div>
 	</div>
 
-</div>
 
+
+  <div id="window4" class="window gif" style="display: fade;">
+		<div class="purple">
+			<p class="windowTitle">about me</p>
+		</div>
+		<div class="mainWindow">
+			<p>about me</p>
+		</div>
+	</div>
+
+  <div id="window5" class="window gif" style="display: fade;">
+		<div class="purple">
+			<p class="windowTitle">calendar</p>
+		</div>
+		<div class="mainWindow">
+			<p>calendar</p>
+		</div>
+	</div>
+
+  <div id="window6" class="window gif" style="display: fade;">
+		<div class="purple">
+			<p class="windowTitle">my computer</p>
+		</div>
+		<div class="mainWindow">
+			<p>my computer</p>
+		</div>
+	</div>
+
+  <div id="window7" class="window gif" style="display: fade;">
+		<div class="purple">
+			<p class="windowTitle">notepad</p>
+		</div>
+		<div class="mainWindow">
+			<p>notepad</p>
+		</div>
+	</div>
+
+  <div id="window8" class="window gif" style="display: fade;">
+		<div class="purple">
+			<p class="windowTitle">recycle bin</p>
+		</div>
+		<div class="mainWindow">
+			<p>recycle bin</p>
+		</div>
+	</div>
+
+ 
+</div>
+                                                        <!--popup windows ends-->
 
 
         </div>
-                                                        <!--monitor end -->
-                                                        <!-- start start-->
+                                                        <!--monitor ends -->
+                                                        <!-- start starts-->
         <div class="start">
 
             <div class="dropdown">
@@ -77,15 +137,16 @@
 
 
         </div>
-                                                        <!--start end -->
+                                                        <!--start ends -->
 
         <div class="pasek"> </div>
 
         <div class="zegar"> </div>
         
-    </div>                                              <!--container end-->
+    </div>                                              <!--container ends-->
 </body>
-</html>
-
 <script src="js/menu.js"></script> 
 <script src="js/window-engine.js"></script>
+<script src="js/readycheck.js"></script>
+</html>
+

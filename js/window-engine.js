@@ -25,15 +25,16 @@ function createWindow(id) {
     document.getElementById("closeButton" + id).onclick = function () {
         fadeOut(windowID);
     };
-    document.getElementById("button" + id).onclick = function () {
-        if (windowID.style.display === "initial") {
-			activeWindow(windowID);
-        } else {
-            windowID.style = "position: absolute;";
-            windowID.style = "top: 80px;";
-            fadeIn(windowID);
-        }
-    };
+         
+    document.getElementById("button" + id).addEventListener("click", function () {
+            if (windowID.style.display === "initial") {
+                activeWindow(windowID);
+            } else {
+                windowID.style = "position: absolute;";
+                windowID.style = "top: 80px;";
+                fadeIn(windowID);
+            }
+        });  
     dragElement(windowID);
 }
 
