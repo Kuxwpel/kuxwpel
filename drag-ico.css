@@ -1,0 +1,100 @@
+#aboutme {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  top: 1rem;
+  left: 1rem;
+}
+
+#mycomputer {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  top: 6rem;
+  left: 1rem;
+}
+#notepad {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  top: 11rem;
+  left: 1rem;
+}
+#calendar {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  top: 16rem;
+  left: 1rem;
+}
+#recyclebin {
+  position: absolute;
+  z-index: 9;
+  text-align: center;
+  top: 21rem;
+  left: 1rem;
+}
+
+#aboutmeheader {
+  cursor: pointer;
+  z-index: 10;
+  background:transparent;
+  background-image: url("ico/aboutme.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+
+#aboutmeheader:focus{
+  image-rendering: pixelated;
+}
+
+#mycomputerheader {
+    cursor: pointer;
+    z-index: 11;
+    background:transparent;
+    background-image: url("ico/mycomputer.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    
+  }
+
+  #notepadheader {
+    cursor: pointer;
+    z-index: 12;
+    background:transparent;
+    background-image: url("ico/notepad.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+  #calendarheader {
+    cursor: pointer;
+    z-index: 13;
+    background:transparent;
+    background-image: url("ico/calendar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+
+  #recyclebinheader {
+    cursor: pointer;
+    z-index: 14;
+    background:transparent;
+    background-image: url("ico/trashbin.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+
+.name-ico{
+    background-color: #008080;
+    color: white;
+}

@@ -1,6 +1,8 @@
                                                     <!--TO DO-->
-                                        <!--*ico+wsparcie double click-->
-
+                                             <!--add dblclick() for icons-->
+                                             <!--add popup icon engine-->
+                                    <!--add transform:pixelated after onclick for icons-->
+                                         <!--add working buttons for icons-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,20 +12,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="window-engine.css">
+    <link rel="stylesheet" href="drag-ico.css">
 </head>
 <body onload="updateHTML()">
     <div class="container">                             <!--container starts-->
                                                         <!--monitor starts-->
         <div class="monitor"> 
 
-                                                        <!--ico starts-->
-            <img src="ico/aboutme.png" width="60" height="60" id="button4"/> <br/>
+        <div id="aboutme">
+            <div id="aboutmeheader"><a href="#" id="button4"> </a> <br/> </div>
+            <div class="name-ico" id="button4">About Me</div>
+        </div>
+        <div id="calendar">
+            <div id="calendarheader"><a href="#" id="button4"> </a> <br/> </div>
+            <div class="name-ico">Calendar</div>
+        </div>
+        <div id="mycomputer">
+            <div id="mycomputerheader"><a href="#" id="button4"> </a> <br/> </div>
+            <div class="name-ico">My Computer</div>
+        </div>
+        <div id="notepad">
+            <div id="notepadheader"><a href="#" id="button4"> </a> <br/> </div>
+            <div class="name-ico">Notepad</div>
+        </div>
+        <div id="recyclebin">
+            <div id="recyclebinheader"><a href="#" id="button4"> </a> <br/> </div>
+            <div class="name-ico">Recycle Bin</div>
+        </div>
+
+                                                        <!--ico starts
+            
             <img src="ico/calendar.png" width="60" height="60" id="button5"/> <br/>
             <img src="ico/mycomputer.png" width="60" height="60" id="button6"/><br/>
             <img src="ico/notepad.png" width="60" height="60" id="button7"/><br/>
             <img src="ico/trashbin.png" width="60" height="60" id="button8"/><br/>
             
-                                                        <!--ico ends-->
+                                                        ico ends-->
                                                         <!--popup windows-->
 <div class="windowGroup">
 
@@ -148,5 +172,6 @@
 <script src="js/menu.js"></script> 
 <script src="js/window-engine.js"></script>
 <script src="js/readycheck.js"></script>
+<script src="js/drag-ico.js"></script>
 </html>
 

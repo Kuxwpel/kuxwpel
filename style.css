@@ -20,6 +20,9 @@ html, body {
     grid-row: 1;
     grid-column: 1 / span 3; 
     background-color: #008080; 
+    background-image: url("img/wallpaper.jpg");
+    background-image: cover;
+    position: relative;
 }
 
 
